@@ -11,11 +11,11 @@ export class DiscordService {
   async notify(message: string): Promise<boolean> {
     const body = {
       content: message,
-      embeds: [
-        {
-          image: { url: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTA3YmR6cmNxa25laTEyOHFtZWpycXFxc2FoMnpjNGxqa3pkZzFiaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d9RbxjZ8QXesiYoerE/giphy.gif" }
-        }
-      ]
+      // embeds: [
+      //   {
+      //     image: { url: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTA3YmR6cmNxa25laTEyOHFtZWpycXFxc2FoMnpjNGxqa3pkZzFiaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d9RbxjZ8QXesiYoerE/giphy.gif" }
+      //   }
+      // ]
     }
 
     const res = await fetch(this.discordWebhookUrl, {
